@@ -1,5 +1,5 @@
 /**
- * FixedDataTable v0.6.3 
+ * FixedDataTable v0.0.2 
  *
  * Copyright (c) 2015, Facebook, Inc.
  * All rights reserved.
@@ -1413,7 +1413,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    } else {
 	      scrollX = props.scrollLeft;
 	    }
-	    if (oldState && props.overflowY !== 'hidden') {
+	    if (oldState && props.overflowY !== 'hidden' && oldState.scrollY !== 0) {
 	      scrollY = oldState.scrollY;
 	    } else {
 	      scrollState = this._scrollHelper.scrollTo(props.scrollTop);
