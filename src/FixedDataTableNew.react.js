@@ -753,7 +753,7 @@ var FixedDataTable = React.createClass({
     } else {
       scrollX = props.scrollLeft;
     }
-    if (oldState && props.overflowY !== 'hidden') {
+    if (oldState && props.overflowY !== 'hidden' && oldState.scrollY !== 0) {
       scrollY = oldState.scrollY;
     } else {
       scrollState = this._scrollHelper.scrollTo(props.scrollTop);
